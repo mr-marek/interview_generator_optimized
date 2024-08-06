@@ -112,12 +112,7 @@ if st.button('Start Interview'):
     # Kick off the crew's work and capture results
     results = crew.kickoff()
 
-    # Extract all exported_output elements
-    exported_outputs = [task.exported_output for task in results['tasks_outputs']]
-
-    # Print the extracted exported_output elements
-    for i, output in enumerate(exported_outputs, start=1):
-        st.write(f"Exported Output {i}:\n{output}\n")
+    st.write(results['final_output'])
 
 else:
     st.write('Please click the button to start the interview')
