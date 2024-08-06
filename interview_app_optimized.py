@@ -112,7 +112,7 @@ if st.button('Start Interview'):
     # Kick off the crew's work and capture results
     results = crew.kickoff()
 
-    st.write(results['final_output'])
+    st.write(results)
 
 else:
     st.write('Please click the button to start the interview')
