@@ -1,20 +1,11 @@
 from groq import Groq
 import streamlit as st
-from langchain_openai import ChatOpenAI
-from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
-from langchain.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 import os
 import tempfile
 from crewai import Crew, Agent, Task, Process
-from langchain_community.tools import DuckDuckGoSearchRun
-from langchain_openai import ChatOpenAI
 import json
 import os
 import requests
-from langchain.tools import tool
-from langchain.agents import load_tools
-from langchain_openai import ChatOpenAI
 from crewai_tools import tool
 from crewai import Crew, Process
 import tomllib
