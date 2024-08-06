@@ -118,17 +118,14 @@ if st.button('Start Interview'):
         full_output=True,
         share_crew=False,
     )
-    # Kick off the crew's work
+    # Kick off the crew's work and capture results
     results = crew.kickoff()
 
     st.markdown('**List of questions generated for the interview**')
-    st.write(generate_interview_questions.output.raw_output)
+    st.write(generate_interview_questions.output.exported_output)
     st.markdown('**Transcript of the interview**')
-    st.write(interview_customer.output.raw_output)
+    st.write(interview_customer.output.exported_output)
     st.markdown('**Summary of the most pressing problems identified in the interviews**')
-    st.write(analyze_interview.output.raw_output)
-
-    
-
+    st.write(analyze_interview.output.exported_output)
 else:
     st.write('Please click the button to start the interview')
