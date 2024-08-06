@@ -112,8 +112,11 @@ if st.button('Start Interview'):
     # Kick off the crew's work and capture results
     results = crew.kickoff()
     
-    
-    st.write(generate_interview_questions)
+    # turn generate_interview_question into string and select substring after 'raw=' and before 'pydantic'
+
+   
+    selectgenerate_interview_questions = str(generate_interview_questions).split('raw_output=')[1].split('tools=')[0]
+    st.write(selectgenerate_interview_questions)
     st.write(results)
 
 else:
