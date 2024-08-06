@@ -111,7 +111,8 @@ if st.button('Start Interview'):
     )
     # Kick off the crew's work and capture results
     results = crew.kickoff()
-    st.write(generate_interview_questions)
+    output_task1 = generate_interview_questions.output.raw_output
+    st.write(output_task1)
     st.write(results)
 
 else:
