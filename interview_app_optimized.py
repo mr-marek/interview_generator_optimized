@@ -116,6 +116,7 @@ if st.button('Start Interview'):
 
    
     selectgenerate_interview_questions = str(generate_interview_questions).split('raw=')[1].split('pydantic')[0]
+    st.write(generate_interview_questions.output.raw)
     st.write(selectgenerate_interview_questions)
     st.write(results)
 
