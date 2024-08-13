@@ -104,7 +104,6 @@ if st.button('Start Interview'):
     crew = Crew(
         agents=[interview_question_generator, customer_interviewer, interview_analyzer],
         tasks=[generate_interview_questions, interview_customer, analyze_interview],
-        verbose=2,
         process=Process.sequential,
         full_output=True,
         share_crew=False,
