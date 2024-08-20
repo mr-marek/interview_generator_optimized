@@ -110,9 +110,9 @@ if st.button('Start Interview'):
     
     # turn generate_interview_question into string and select substring after 'raw=' and before 'pydantic'
 
-    st.write(generate_interview_questions.output.raw_output)
-    st.write(interview_customer.output.raw_output)
-    st.write(analyze_interview.output.raw_output)
+    st.write(generate_interview_questions.output.raw)
+    st.write(interview_customer.output.raw)
+    st.write(analyze_interview.output.raw)
 
 else:
     st.write('Please click the button to start the interview')
